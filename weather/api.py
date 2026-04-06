@@ -49,7 +49,7 @@ def get_location_by_ip():
               and optionally 'zipcode'.
 
     Raises:
-        click.ClickException: If the location cannot be determined.
+        RuntimeError: If the location cannot be determined.
     """
     try:
         response = requests.get(
