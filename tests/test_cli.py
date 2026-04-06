@@ -83,7 +83,7 @@ class TestCurrentCommand:
         result = runner.invoke(cli, ["current", "--zipcode", "90210"])
 
         assert result.exit_code == 0
-        assert "It is currently 72.5ºF, and Clear sky in Beverly Hills, California." in result.output
+        assert "It is currently 72.5°F, and Clear sky in Beverly Hills, California." in result.output
 
     @patch("weather.cli.get_current_weather")
     @patch("weather.cli.get_location")
@@ -106,7 +106,7 @@ class TestCurrentCommand:
         result = runner.invoke(cli, ["current"])
 
         assert result.exit_code == 0
-        assert "It is currently 58.0ºF, and Partly cloudy in San Francisco, California." in result.output
+        assert "It is currently 58.0°F, and Partly cloudy in San Francisco, California." in result.output
 
     @patch("weather.cli.get_location")
     def test_location_error(self, mock_location):

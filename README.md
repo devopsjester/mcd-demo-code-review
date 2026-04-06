@@ -49,11 +49,11 @@ Display the current temperature and weather conditions.
 ```bash
 # Weather for a zip code
 python -m weather.cli current --zipcode 90210
-# Output: It is currently 72.5ºF, and Clear sky in Beverly Hills, California.
+# Output: It is currently 72.5°F, and Clear sky in Beverly Hills, California.
 
 # Weather for current location
 python -m weather.cli current
-# Output: It is currently 58.0ºF, and Partly cloudy in San Francisco, California.
+# Output: It is currently 58.0°F, and Partly cloudy in San Francisco, California.
 ```
 
 ### Help

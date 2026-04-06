@@ -43,7 +43,7 @@ def current(zipcode):
         condition = weather["condition"]
 
         click.echo(
-            f"It is currently {temp}ºF, and {condition} in {city}, {state}."
+            f"It is currently {temp}°F, and {condition} in {city}, {state}."
         )
     except RuntimeError as exc:
         raise click.ClickException(str(exc))
